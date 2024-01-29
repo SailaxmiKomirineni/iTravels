@@ -1,0 +1,243 @@
+/* 
+1. search bar maintain in % 
+2. for scale do on li not on <a>
+3. Font awesome icon-4 is free
+4. in  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                                     black  , opacity
+5. aspect-ratio:1/1; for image and content.
+6.overflow should be applied in image [container] only.
+*/
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: black;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    position: sticky;
+    top:0;
+}
+
+.Logo span{
+    font-size: 30px;
+}
+
+.search-input{
+    display: flex;
+    width: 40%;
+    height: 30px;
+    position: relative;
+}
+
+.search-input input{
+    width: 100%;
+    height:30px;
+    padding-left:10px;
+    border-radius: 5px;
+    border:1px solid #fff;
+}
+.search-input i{
+    height:30px;
+    width:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    position: absolute;
+    right:0px;
+    border-radius: 0px 5px 5px 0px ;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    gap:30px; 
+    color: #fff;
+}
+
+.navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.navigation ul li{
+    transition:0.3s;
+}
+
+.navigation ul li:hover{
+    transform:scale(1.3);
+}
+
+.image-container{
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width:500%;
+    height: 100vh;
+    animation:animation1 20s infinite;
+    margin-bottom: 40px;
+}
+
+.slider img{
+    width:100%;
+}
+
+@keyframes animation1{
+   0%{
+    margin-left: 0%;
+   }
+
+   15%{
+    margin-left: 0%;
+   }
+
+   20%{
+    margin-left: -100%;
+   }
+
+   35%{
+    margin-left: -100%;
+   }
+
+   40%{
+    margin-left: -200%;
+   }
+
+   55%{
+    margin-left: -200%;
+   }
+
+   60%{
+    margin-left: -300%;
+   }
+
+   75%{
+    margin-left: -300%;
+   }
+
+   80%{
+    margin-left: -400%;
+   }
+
+   95%{
+    margin-left: -400%;
+   }
+
+   100%{
+    margin-left: 0%;
+   }
+}
+
+.card{
+    width:250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px 20px;
+}
+
+.card img{
+    width: 100%;
+    /* height:170px; */
+    aspect-ratio: 1.5/1;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.card-content{
+    padding: 10px;
+  
+}
+.card-content p{
+    margin-top: 5px;
+    font-size: 13px;
+    color: #4b4b4b;
+}
+.card-content h3{
+    margin-bottom: 15px;
+}
+.card-content button{
+    margin-top: 20px;
+    background: crimson;
+    color: #fff;
+    padding: 3px 10px;
+    border: none;
+    outline: 1px solid black;
+    outline-offset: 2px;
+    cursor: pointer;
+}
+.card-content b{
+    color:black
+}
+
+.card-container{
+     display: flex;
+    width:900px;
+    flex-wrap: wrap;
+    margin: auto;
+    overflow: hidden;
+}
+.places-container{
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.places-container header{
+    margin-bottom: 30px;
+}
+
+.place-heading-container{
+margin-bottom: 40px;
+}
+
+.card img:hover{
+transform: scale(1.2);
+}
+
+.img-container{
+    overflow: hidden;
+}
+.card-content button:hover{
+    outline-offset: 5px;
+}
+.about-us-container{
+    padding: 30px;
+}
+.about-us-heading-container{
+    margin-bottom: 30px;
+}
+.about-content{
+    width:60%;
+    margin: auto;
+}
+.about-content p{
+    margin-bottom:10px;
+}
+
+.footer{
+   text-align: center;
+   color: #606060;
+   margin: 40px 90px;
+}
+.footer-heading span{
+    font-size: 20px;
+}
+.icon-container i{
+    font-size: 30px;
+    margin: 10px 10px;
+    transition:.3s;
+}
+
+.icon-container i:hover{
+    scale:1.3;
+}
+
+
